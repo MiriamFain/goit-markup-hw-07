@@ -1,8 +1,14 @@
-@import "./header";
-@import "./hero";
-@import "./modal";
-@import "./team";
-@import "./work";
-@import "./client";
-@import "./footer";
-@import "./gallery";
+@import "../sass/utils/variables";
+@import "../sass/base/reset";
+
+@import "../sass/layout/header";
+@import "../sass/layout/hero";
+@import "../sass/layout/features";
+@import "../sass/layout/work";
+@import "../sass/layout/team";
+@import "../sass/layout/client";
+@import "../sass/layout/gallery";
+@import "../sass/layout/footer";
+
+@import "../sass/components/buttons";
+@import "../sass/components/modal";
