@@ -1,6 +1,5 @@
 .main-line {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 
 .header-contact {
@@ -80,8 +79,7 @@
 }
 
 .header-contact-link {
-  display: flex;
-  align-items: center;
+  @extend %align-list
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;

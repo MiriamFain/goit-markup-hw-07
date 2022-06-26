@@ -73,8 +73,7 @@
 }
 
 .footer-form {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 
 .footer-btn {
