@@ -238,9 +238,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: auto;
   margin-bottom: 40px;
-}
 
-.form-btn:hover,
-.form-btn:focus {
-  background-color: rgba(24, 140, 232, 1);
+  &:hover,
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+  }
 }
