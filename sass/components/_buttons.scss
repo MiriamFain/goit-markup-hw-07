@@ -1,6 +1,19 @@
-.button.primary {
+.button {
+  border-radius: 4px;
+  border: 0px;
   color: $first-contrast-text-color;
   background-color: $accent-color;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+.button.primary {
   font-weight: 700;
   line-height: 1.87;
   display: flex;
@@ -48,22 +61,7 @@
 }
 
 .button.form-btn {
+  @extend .button.primary
   padding: 10px 55px;
-  color: $first-contrast-text-color;
-  background-color: $accent-color;
-  font-weight: 700;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 55px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: auto;
   margin-bottom: 40px;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color-dark;
-  }
 }
