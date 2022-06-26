@@ -10,12 +10,12 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: inherit;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: inherit;
+  }
 }
 
 .no-scroll {
@@ -115,13 +115,19 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.form-input::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+  }
 }
 
 .form-icon {
@@ -139,11 +145,11 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.form-input:focus ~ .form-icon,
-.form-input:hover ~ .form-icon {
-  fill: var(--accent-color);
+  .form-input:focus ~ &,
+  .form-input:hover ~ & {
+    fill: var(--accent-color);
+  }
 }
 
 .form-label {
@@ -161,6 +167,12 @@
   height: 120px;
   resize: none;
   margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+  }
 }
 
 .form-input-term {
@@ -214,14 +226,6 @@
   box-sizing: border-box;
   background-size: contain;
   background-position: center;
-}
-
-.form-input:hover,
-.form-input:focus,
-.form-input-comment:hover,
-.form-input-comment:focus {
-  border: 1px solid #2196f3;
-  outline: none;
 }
 
 .button.form-btn {

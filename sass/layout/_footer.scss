@@ -17,11 +17,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.footer-address-link:hover,
-.footer-address-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-address-contact {
@@ -30,11 +30,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.footer-address-contact:hover,
-.footer-address-contact:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-social-text,

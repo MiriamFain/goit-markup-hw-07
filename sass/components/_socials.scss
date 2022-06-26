@@ -33,11 +33,11 @@
 
 .social__icon {
   fill: var(--main-vector-color);
-}
 
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-  fill: var(--second-vector-color);
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--second-vector-color);
+  }
 }
 
 .social__link--footer {
