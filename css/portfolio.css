@@ -12,16 +12,6 @@
   --timing-function: (0.4, 0, 0.2, 1);
 }
 
-.logo {
-  margin: 24px 93px 24px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1, 42;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -75,6 +65,99 @@ ol {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*--------------------------------------------------*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea {
+  outline: none;
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,14 +169,6 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
@@ -118,10 +193,85 @@ body {
   background-color: var(--section-bg-color);
 }
 
-img {
-  max-width: 100%;
+.button.primary {
+  color: var(--first-contrast-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: auto;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: rgb(24, 140, 232);
+}
+
+.button-list {
+  margin-bottom: 50px;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: rgb(245, 244, 250);
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list .current-btn,
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--first-contrast-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms;
+}
+
+.button-list .btn + .btn {
+  margin-left: 8px;
+}
+
+.logo {
+  margin: 24px 93px 24px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 42;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-accent {
+  color: var(--title-text-color);
+}
+
+.footer-logo {
+  margin: 24px 93px 24px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 42;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 20px;
   display: block;
-  height: auto;
+}
+
+.footer-logo-accent {
+  color: var(--first-contrast-text-color);
 }
 
 .main-line {
@@ -443,75 +593,4 @@ img {
 .gallery-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: 250ms;
-}
-
-.button.primary {
-  color: var(--first-contrast-text-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: auto;
-}
-
-.button.primary:hover,
-.button.primary:focus {
-  background-color: rgb(24, 140, 232);
-}
-
-.button-list {
-  margin-bottom: 50px;
-}
-
-.button.secondary {
-  color: var(--title-text-color);
-  background-color: rgb(245, 244, 250);
-  font-weight: 500;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 6px 22px;
-}
-
-.button-list {
-  display: flex;
-  justify-content: center;
-}
-
-.button-list .current-btn,
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--first-contrast-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms;
-}
-
-.button-list .btn + .btn {
-  margin-left: 8px;
-}
-
-.logo-accent {
-  color: var(--title-text-color);
-}
-
-.footer-logo {
-  margin: 24px 93px 24px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1, 42;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  margin-bottom: 20px;
-  display: block;
-}
-
-.footer-logo-accent {
-  color: var(--first-contrast-text-color);
 }/*# sourceMappingURL=portfolio.css.map */

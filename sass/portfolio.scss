@@ -2,11 +2,12 @@
 @import "../sass/utils/placeholders";
 
 @import "../sass/base/reset";
-
-@import "../sass/layout/header";
-
-@import "../sass/layout/footer";
-@import "../sass/layout/gallery";
+@import "../sass/utils/hidden";
+@import "../sass/base/common";
 
 @import "../sass/components/buttons";
 @import "../sass/components/logo";
+
+@import "../sass/layout/header";
+@import "../sass/layout/footer";
+@import "../sass/layout/gallery";
