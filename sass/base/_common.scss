@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
+  background-color: $primary-bg-color;
+  color: $text-color;
 }
 
 .container {
@@ -17,5 +17,5 @@ body {
 }
 
 .team {
-  background-color: var(--section-bg-color);
+  background-color: $section-bg-color;
 }

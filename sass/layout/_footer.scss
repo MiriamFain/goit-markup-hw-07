@@ -12,28 +12,28 @@
 }
 
 .footer-address-link {
-  color: var(--first-contrast-text-color);
+  color: $first-contrast-text-color;
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .footer-address-contact {
-  color: var(--second-contact-text-color);
+  color: $second-contact-text-color;
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -44,7 +44,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--first-contrast-text-color);
+  color: $first-contrast-text-color;
   margin-top: 75px;
   margin-bottom: 20px;
 }
@@ -65,7 +65,7 @@
   margin-right: 10px;
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 }
 
 .footer-email {
@@ -85,7 +85,7 @@
 }
 
 .icon-send {
-  fill: #fff;
+  fill: $icon-white;
   margin-left: 10px;
   text-align: center;
 }

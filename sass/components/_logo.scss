@@ -5,10 +5,10 @@
   font-size: 26px;
   line-height: 1, 42;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
 
   &--accent {
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
 
   &__footer {
@@ -17,6 +17,6 @@
   }
 
   &__footer--accent {
-    color: var(--first-contrast-text-color);
+    color: $first-contrast-text-color;
   }
 }

@@ -11,7 +11,7 @@
     margin-left: 15px;
     margin-bottom: 30px;
     overflow: hidden;
-    background-color: var(--primary-bg);
+    background-color: $primary-bg;
   }
 
   & .item:nth-last-child(-n + 3) {
@@ -35,14 +35,14 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .image-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .card-tumb {
@@ -50,38 +50,38 @@
   overflow: hidden;
 }
 
-.card-content-action {
-  overflow: hidden;
-  display: flex;
-  position: absolute;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--first-contrast-text-color);
-  background-color: rgba(33, 150, 243, 0.9);
-
-  bottom: 0;
-  padding: 24px;
-  opacity: 0;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  transform: translateY(101%);
-
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-
-  .item:hover &,
-  .item:focus & {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .card-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+  &-action {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $first-contrast-text-color;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    bottom: 0;
+    padding: 24px;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    transform: translateY(101%);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    .item:hover &,
+    .item:focus & {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

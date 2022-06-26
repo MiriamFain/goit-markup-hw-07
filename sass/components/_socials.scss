@@ -23,20 +23,20 @@
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
 .social__icon {
-  fill: var(--main-vector-color);
+  fill: $main-vector-color;
 
   .social__link:hover &,
   .social__link:focus & {
-    fill: var(--second-vector-color);
+    fill: $second-vector-color;
   }
 }
 
@@ -45,5 +45,5 @@
 }
 
 .social__icon--footer {
-  fill: var(--second-vector-color);
+  fill: $second-vector-color;
 }

@@ -21,8 +21,8 @@
 .button {
   border-radius: 4px;
   border: 0px;
-  color: var(--first-contrast-text-color);
-  background-color: var(--accent-color);
+  color: $first-contrast-text-color;
+  background-color: $accent-color;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
@@ -30,10 +30,10 @@
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 }
 
 .footer {
   padding-bottom: 60px;
-  background-color: var(--dark-bg-color);
+  background-color: $dark-bg-color;
 }
