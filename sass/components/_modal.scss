@@ -69,11 +69,11 @@
 
 .icon-close-black {
   fill: black;
-}
 
-.icon-close-black:hover,
-.icon-close-black:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .form {
