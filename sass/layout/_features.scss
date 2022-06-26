@@ -16,8 +16,8 @@
   }
 
   &__title {
-    @include font(700, 14px, 1.14);
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
     color: $title-text-color;
     margin-top: $basic-margin;
@@ -25,9 +25,8 @@
   }
 
   &__text {
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
+    @include font(null, 14px, 1.71, 0.03em);
+
     color: $text-color;
     max-width: 270px;
     min-height: 75px;

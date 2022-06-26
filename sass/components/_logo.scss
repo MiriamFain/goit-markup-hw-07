@@ -1,8 +1,8 @@
 .logo {
   margin: 24px 93px 24px 0;
   font-family: "Raleway", sans-serif;
-  @include font(700, 24px, 1.42);
-  letter-spacing: 0.03em;
+  @include font(700, 24px, 1.42, 0.03em);
+
   color: $accent-color;
 
   &--accent {

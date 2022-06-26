@@ -82,9 +82,8 @@
 }
 
 .form-title {
-  @include font(700, 20px, 1.15);
+  @include font(700, 20px, 1.15, 0.03em);
 
-  letter-spacing: 0.03em;
   text-align: center;
   color: $title-text-color;
   margin-bottom: 12px;
@@ -116,9 +115,8 @@
   transition-timing-function: var(--timing-function);
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(null, 20px, 1.15, 0.03em);
+
     color: rgba(117, 117, 117, 0.5);
   }
 
