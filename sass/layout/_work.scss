@@ -12,8 +12,8 @@
     position: absolute;
     bottom: 0;
 
-    @include font(700, 14px, 1.14);
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
 
     color: $first-contrast-text-color;
