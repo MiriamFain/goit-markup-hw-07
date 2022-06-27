@@ -1,4 +1,6 @@
 .features {
+  padding-bottom: 0;
+
   &__list {
     display: flex;
 
@@ -30,10 +32,6 @@
     color: $text-color;
     max-width: 270px;
     min-height: 75px;
-  }
-
-  &--section {
-    padding-bottom: 0;
   }
 
   &__icon {

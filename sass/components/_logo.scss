@@ -5,16 +5,16 @@
 
   color: $accent-color;
 
-  &--accent {
+  &__accent {
     color: $title-text-color;
   }
 
-  &__footer {
+  &--footer {
     margin-bottom: 20px;
     display: block;
   }
 
-  &__footer--accent {
+  &__accent-footer {
     color: $first-contrast-text-color;
   }
 }
