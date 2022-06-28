@@ -1,9 +1,7 @@
-.clients__section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients {
   &__title {
     @include font(null, 36px, 1.16, 0.03em);
 
